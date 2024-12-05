@@ -4,17 +4,17 @@ import { Doc } from "../../../convex/_generated/dataModel";
 import { Building2Icon, CircleUserIcon } from "lucide-react";
 import { format } from "date-fns";
 import { DocumentMenu } from "./document-menu";
+import { useRouter } from "next/navigation";
 
 interface DocumentRowProps{
     document: Doc<"documents">;
 }
 
 export const DocumentRow=({document}:DocumentRowProps)=>{
-    const onNewTabClick = (id:string)=>{
-        window.open(`/documents/${id}`,"_blank");
-    }
+    const router = useRouter();
     return (
         <TableRow
+            onClick={()=>router.push(`/documents/${document._id}`)}
             className="cursor-pointer"
         >
             <TableCell className="w-[50px]">
@@ -31,7 +31,8 @@ export const DocumentRow=({document}:DocumentRowProps)=>{
                 {format(new Date(document._creationTime),"MMM dd, yyyy")}
             </TableCell>
             <TableCell className="flex justify-end">
-                <DocumentMenu documentId={document._id} title={document.title} onNewTab={onNewTabClick} />
+                <DocumentMenu documentId={document._id} title={document.title} 
+                onNewTab={()=>window.open(`/documents/${document._id}`,"_blank")} />
             </TableCell>
         </TableRow>
     )
