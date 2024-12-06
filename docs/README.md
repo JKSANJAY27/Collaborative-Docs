@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Deployed: https://collaborative-docs-fqd7.vercel.app/
 
-## Getting Started
+**Key Features:**
 
-First, run the development server:
+📝 Create and edit documents with real-time collaboration.
+🤝 Create organizations, invite team members, and work together on documents.
+🔔 Instant notifications for mentions and comments to keep everyone on the same page.
+💬 Live text editing using Liveblocks, allowing users to see updates in real time.
+🔧 Custom extensions for line height, font size, and ruler for margins, in addition to inbuilt features from the TipTap library.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Tech Stack:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚡ Built with Next.js for performance and scalability.
+🔐 User authentication via Clerk.
+🗄️ Convex as the database for seamless data handling.
+✨ Liveblocks powering the real-time collaborative experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![image](https://github.com/user-attachments/assets/b522659b-1f41-4a04-b67c-4fbdc6933b9b)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![image](https://github.com/user-attachments/assets/7362ac16-3c80-40ea-aec7-0de11eecef30)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
