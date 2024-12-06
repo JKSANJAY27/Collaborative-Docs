@@ -62,7 +62,7 @@ export const Editor=()=>{
         },
         extensions:[
             StarterKit.configure({
-                        history:false,
+                history:false,
             }), liveblocks,
             TaskItem.configure({
                 nested: true,
